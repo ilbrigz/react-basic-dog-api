@@ -156,8 +156,8 @@ class HomePage extends React.Component {
           alignItems: "flex-start"
         }}
       >
-        <select onChange={this.onChange} value="" defaultValue="Choose here">
-          <option selected>select your favorite dog</option>
+        <select onChange={this.onChange} value="">
+          <option value="">select your favorite dog</option>
           {Object.keys(this.state.dogs).map(key => {
             return (
               <option key={key} value={key}>
